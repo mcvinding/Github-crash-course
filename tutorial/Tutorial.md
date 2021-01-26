@@ -56,7 +56,7 @@ git remote -v
 *Step 4*: With the remote setup, the last step is just to pull the remote files.
 
 ````bash
-git pull origin master
+git pull origin main
 ````
 
 You should now see the README file in your local repository.
