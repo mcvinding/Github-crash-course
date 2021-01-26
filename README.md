@@ -1,6 +1,6 @@
 ﻿# Using Git/GitHub in Scientific Collaborations
 
-This is the GitHub repository with material for the Git/GitHub crash course **Using Git/Github in Scientific Collaborations** at NatMEG. Here you will find the handouts from the lecture and the tutorial material for the exercise. The goal is to get you started using Git and GitHub for managing and sharing analysis scripts and experiments in scientific collaboration.
+This is the GitHub repository with material for the Git/GitHub crash course **Using Git/GitHub in Scientific Collaborations** at NatMEG, Karolinska Institutet, Sweden. Here you will find the handouts from the lecture and the tutorial material for the exercise. The goal is to get you started using Git and GitHub for managing and sharing analysis scripts and experiments in scientific collaboration.
 
 We will start from the absolute beginning, assuming no prior experience with Git and (hopefully) reach a point where you can use it well enough for managing scientific projects on GitHub.
 
@@ -18,10 +18,10 @@ If you have not used Git before (on your local computer or NatMEG's server) you 
 
 ## Useful resources
 * A checklist of Git commands: https://github.com/joshnh/Git-Commands 
-* A guick guide to Markdown (for writing `README.md`): ...
+* A quick guide to Markdown (for writing `README.md`): https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 ## Contact
-For questions or comments, contact: mailto:mikkel.vinding@ki.se
+For questions or comments, contact: [mikkel.vinding@ki.se](mailto:mikkel.vinding@ki.se)
 
 ## Disclaimer
-*This course has no affiliation to GitHub, Inc. This course and all the materials in this repository is for educational purposes only. All materials in this repository are free and open for fair use under the CC license.*
+*This course has no affiliation to GitHub, Inc. All the materials in this repository is for non-profit educational purposes only. All materials in this repository are free and open for fair use under the CC license.*
