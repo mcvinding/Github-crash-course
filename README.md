@@ -17,11 +17,13 @@ For the tutorial, you need:
 If you have not used Git before (on your local computer or NatMEG's server) you need to check the configuration before you can use Git and run the tutorials. You will find a guide how to do the configuration [here](./tutorial/Setup_guide.md ), before you proceed to the tutorials.
 
 ## Useful resources
-* A checklist of Git commands: https://github.com/joshnh/Git-Commands 
+* A very useful checklist of Git commands: https://github.com/joshnh/Git-Commands 
 * A quick guide to Markdown (for writing `README.md`): https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 ## Contact
 For questions or comments, contact: [mikkel.vinding@ki.se](mailto:mikkel.vinding@ki.se)
+
+<img src="/images/NatMEG_POS.png" style="zoom:25%;" />
 
 ## Disclaimer
 *This course has no affiliation to GitHub, Inc. All the materials in this repository is for non-profit educational purposes only. All materials in this repository are free and open for fair use under the CC license.*
