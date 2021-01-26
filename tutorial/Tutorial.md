@@ -106,23 +106,85 @@ Now try to remove the file you just created. Go back to the terminal. Use `git r
 git rm <my_file.txt>
 ````
 
-Look in your folder again. The file is now gone. `git rm` deletes files permanently with no warning. Too bad if you wanted to keep that file or removed it by mistake. In case you want to keep the file use the extra flag  `--chached` with `git rm`, like this:
+Look in your folder again. The file is now gone. `git rm` deletes files permanently with no warning. Too bad if you wanted to keep that file or removed it by mistake. In case you want to keep the file use the extra flag `--chached` with `git rm`, like this:
 
 ````bash
 git rm <my_file.txt> --chached
 ````
 
-## 3) Revert to earlier version
-Let's seee if we can restore the deleted file.
+This would have been useful to know before you were told to delete the file! Now, do you dare to add all changes (`git add -u`) and commit the changes before you go to the next step?
 
-## 4) Get remote project
-You do not have to start a project from scratch every time. In the next part you shall pull the scripts that is in this tutorial. The easiest way to do this is using the one-way `clone` option. Find the link for the remote repository and then clone it:
+
+## 3) Revert to earlier version
+Let's see if we can restore the deleted file? Since you have not commited the changes yet, you can go back to the latest commit
+
+````bash
+$ git reset --hard HEAD
+````
+
+Did this restore the deleted file? If you commited the changes after deleting the file, it will be part of the latest commit. In that case you must find a previous commit to revert to. First, you must find the commit id number of the commit. Use `git log` to get a list of all commits. You will see that each commit has a long gibberish number like this: `9fb4a...`. Copy the number of the commit you want to return to and use it like this:
+
+````bash
+$ git reset <the long number>
+````
+
+## 4) Branches
+So far you have only been working on one branch. Let's say that you want to implement a new analysis step, but you do not yet want it to be part of the code you present on your GitHub account. A solution is to create a new branch. You can see your current branches with `git branch -a`. The main function for managing branches is `git checkout`. 
+Create a new branch by adding the flag `-b` (for new *b*ranch) like this:
+
+````bash
+git checkout -b <branch name>
+````
+Keep the branch name short, informative, and without blank spaced; e.g. `butfix` or `new-prepoc` depending om your reason for the new branch.
+
+You can switch between braches with `git checkout` without the `-b` flag.
+
+````bash
+git checkout <branch name>
+````
+
+If you get lost, use git `git branch -a` to see your branches with the one you are currently on highlighted. The output from `git status` also specify as the very first line which branch you are currently at and what changes yoyu have stages in that branch.
+
+Make it a practice to always check which branch you are in when you begin your work.
+
+**Merging a branch**
+
+Now switch back to the new branch.
+
+## 5) Get remote project
+You do not have to start a project from scratch every time. In the next part you shall pull the scripts that is in this tutorial. The easiest way to do this is using the one-way `clone` option. Find the link for the remote repository and then clone it. This will pull the entire repository into a new folder called `Github-crash-course`.
 
 ````bash
 git clone <remote url>
 ````
 
-This will pull the entire repository into a new folder called `Github-crash-course`. 
+This is how you (usually) would get open source toolboxes. You can then keep the toolbox up to date by pulling the recent updates from the developers hwnever they push the latest changes. You can, however, not push your changes directly back unless they make you a collaborator. What you can do is to make your own "fork" of the repository. Let's look at two ways to do this.
+
+*Option 1*: Clone the remote folder. Then change the remote `origin` to the address for your GitHub repository:
+
+````bash
+git remote set-url origin <the link>
+````
+Use `git remote -v` to see the location of before and after you redefine `origin`. This option might lead to errors if you already have local changes.
+
+*Option 2*: have multiple remotes. You can have multiple remotes beside `origin`. `origin` is not a Git function but the name we gave the remote when we defined it with `git remote add` (however, naming your main remote `origin` is the  convention you will see all over GitHub, so use the this name to make things easier for yourself and everybody else).
+
+In the tutoiral folder you created in the beginning, you specified `origin` as the GitHub repository on your account. Now add a new remote that point to this tutorial repository. As when you cloned the tutorial repository, find and copy the url. Then add this as a new remote in your terminal. By convention, we call this `upstream`.
+
+````bash
+git remote add upstream <the link>
+````
+
+See the remotes with `git remote -v`. Get the files from the remote to your local folder and merge them into your fork.
+
+````bash
+git fetch upstream main
+git merge upstream/main
+````
+
+
+
+
 
 ... which remote ...
 
