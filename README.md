@@ -5,7 +5,13 @@ This is the GitHub repository with material for the Git/GitHub crash course **Us
 We will start from the absolute beginning, assuming no prior experience with Git and (hopefully) reach a point where you can use it well enough for managing scientific projects on GitHub.
 
 ## Overview
-This crash course is a short lecture that introduce the basics of Git and GitHub and an online tutorial that covers the basics for using Git/GitHub. The handout slides from the lecture is in the folder `lecture_handouts`. The tutorial is in the folder `tutorial` and the folder `friday_toolbox` contains the code you will be working on during the tutorial exercise.
+This crash course is a short lecture that introduce the basics of Git and GitHub and an online tutorial that covers the basics for using Git/GitHub. The handout slides from the lecture is in the folder `lecture_handouts`. 
+
+See the document `Setup_guide.md` how to get started with GitHub if this is the first time you are using GitHub. Please make sure that you have gone though this setup guide before the workshop.
+
+The tutorial is in the file `Tutorial.md`. Click on the file above to get started.
+
+The folder `friday_toolbox` contains the code you will be working on during the tutorial exercise.
 
 ## Getting started
 
