@@ -44,4 +44,6 @@ $ git config -l
 
 It is recommended to use SSH to connect between your local and remote folders. This allows for automatic authentication when you push to remote (otherwise, anybody could push to your account). You need to add an SSH key when you push from a new machine.
 
-To add a new SSH key, see this guide: https://docs.github.com/en/enterprise/2.17/user/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
+To add a new SSH key, see these guides:
+1) Generate SSH key: https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+2) Add SSH key: https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
