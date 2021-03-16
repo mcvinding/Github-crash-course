@@ -20,7 +20,7 @@ For the tutorial, you need:
 2. Git installed on your local computer. See here how to install: https://github.com/git-guides/install-git. (*If you are working on the NatMEG server Compute, you already have Git installed*)
 
 **Important:**
-If you have not used Git before (on your local computer or NatMEG's server) you need to check the configuration before you can use Git and run the tutorials. You will find a guide how to do the configuration [here](./tutorial/Setup_guide.md ), before you proceed to the tutorials.
+If you have not used Git before (on your local computer or NatMEG's server) you need to check the configuration before you can use Git and run the tutorials. You will find a guide how to do the configuration [here](./Setup_guide.md ), before you proceed to the tutorials.
 
 ## Useful resources
 * A very useful checklist of Git commands: https://github.com/joshnh/Git-Commands 
