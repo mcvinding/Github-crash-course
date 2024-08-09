@@ -33,4 +33,4 @@ For questions or comments, contact: [mikkel.vinding@ki.se](mailto:mikkel.vinding
 <img src="/images/NatMEG_POS.png" style="zoom:25%;" />
 
 ## Disclaimer
-*This course has no affiliation with GitHub, Inc. All the materials in this repository are for non-profit educational purposes only. All materials in this repository are free and open for fair use under the CC license.*
+*This course has no affiliation with GitHub, Inc. All the materials in this repository are for non-profit educational purposes only. All materials in this repository are free and open for fair use under the GNU General Public License v3.0.*
